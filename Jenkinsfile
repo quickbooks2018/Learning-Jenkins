@@ -1,6 +1,6 @@
 node {
  stage('SCM Checkout') {
-   git 'https://github.com/quickbooks2018/Learning-Jenkins/tree/master/my-app-master'
+   git 'https://github.com/quickbooks2018/Learning-Jenkins'
  }
  stage('Compile-Package') {
  //Get Maven Home Path
