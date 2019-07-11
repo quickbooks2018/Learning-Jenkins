@@ -5,6 +5,6 @@ node {
  stage('Compile-Package') {
  //Get Maven Home Path
    #def mvnHome = tool name: 'maven3', type: 'maven'
-   sh "/var/jenkins_home/maven"
+   sh '/var/jenkins_home/maven/bin'
  }
 }
