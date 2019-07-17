@@ -3,7 +3,7 @@ node {
  git 'https://github.com/quickbooks2018/Learning-Jenkins'
  }
  stage('Compile-Package'){
- sh 'mvn package'
+ sh 'M3'
  }
 
 
