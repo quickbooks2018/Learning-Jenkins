@@ -3,12 +3,9 @@ node {
  git 'https://github.com/quickbooks2018/Learning-Jenkins'
  }
  stage('Compile-Package'){
-   steps {
-                sh '''
-                    echo "PATH = ${PATH}"
-                    echo "M2_HOME = ${M2_HOME}"
-                '''
-            }
+  
+  def mvnHome = tool name: 'M3', type: 'maven'
+  sh "${mvnHome/bin/mvn}"
  }
 
 
