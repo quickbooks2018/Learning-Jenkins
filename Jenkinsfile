@@ -5,7 +5,7 @@ node {
  stage('Compile-Package'){
   
   def mvnHome = tool name: 'M3', type: 'maven'
-  sh "${mvnHome}/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/M3"
+  sh "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/M3"
  }
 
 
