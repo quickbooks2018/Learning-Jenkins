@@ -11,7 +11,7 @@ node {
    mail bcc: '', body: '''Hi there,
    Email Alerts From Jenkins.
    Regards,
-   Muhammad Asim''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'alerts.cloudelligent.com'
+   Muhammad Asim''', cc: '', from: 'alerts.cloudelligent.com', replyTo: '', subject: 'Jenkins Job', to: 'alerts.cloudelligent.com'
   }
 
 
