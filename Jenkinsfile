@@ -7,6 +7,12 @@ node {
   def mvnHome = tool name: 'M3', type: 'maven'
   sh "${mvnHome} package"
  }
+ stage ('Email Notification'){
+   mail bcc: '', body: '''Hi there,
+   Email Alerts From Jenkins.
+   Regards,
+   Muhammad Asim''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'alerts.cloudelligent.com'
+  }
 
 
 
