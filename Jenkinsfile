@@ -12,7 +12,6 @@ node {
    Email Alerts From Jenkins.
    Regards,
    Muhammad Asim''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'alerts.cloudelligent.com'
-   env.((env.emailsdl).replaceAll("\$", ""))
   }
 
 
