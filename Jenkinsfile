@@ -8,7 +8,11 @@ node {
   sh "${mvnHome} package"
  }
  stage ('Email Notification'){
-   mail bcc: '', body: 'Jenkins test', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'alerts.cloudelligent@gmail.com'
+   #mail bcc: '', body: 'Jenkins test', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'alerts.cloudelligent@gmail.com'
+   mail bcc: '', body: '''Dear all
+   This is Jenkins Test
+   Regards
+   Muhammad Asim''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'alerts.cloudelligent@gmail.com'
   }
 
 
